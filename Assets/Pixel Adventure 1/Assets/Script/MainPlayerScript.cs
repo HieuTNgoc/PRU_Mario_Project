@@ -35,7 +35,7 @@ public class MainPlayerScript : MonoBehaviour
         animator.SetBool("DbJump", DbJump);
         JumpUp();
         Vector3 position = transform.position;
-        if (position.y < -15f) Destroy(gameObject); 
+        if (position.y < -15f) GameOver(); 
     }
 
     private void FixedUpdate()
@@ -113,5 +113,11 @@ public class MainPlayerScript : MonoBehaviour
         direction.x *= -1;
         transform.localScale = direction;
         Turn = false;
+    }
+
+    public void GameOver()
+    {
+        Destroy(gameObject);
+        print("Game Over!");
     }
 }

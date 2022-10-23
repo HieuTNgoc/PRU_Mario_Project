@@ -5,9 +5,6 @@ using UnityEngine;
 public class CameraScript : MonoBehaviour
 {
     private Transform Player;
-    private float minX = 28, maxX = 295;
-    private float minY = 7, maxY = 28;
-
 
     private void Start()
     {
