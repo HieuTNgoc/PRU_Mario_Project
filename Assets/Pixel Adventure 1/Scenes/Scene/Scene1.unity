@@ -1808,6 +1808,7 @@ GameObject:
   - component: {fileID: 667948866}
   - component: {fileID: 667948865}
   - component: {fileID: 667948864}
+  - component: {fileID: 667948867}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Untagged
@@ -1881,6 +1882,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &667948867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667948863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78fc2f3a4e8235b4ba651e73b88474da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &692864396
 GameObject:
   m_ObjectHideFlags: 0
@@ -4161,7 +4174,7 @@ GameObject:
   - component: {fileID: 1988265496}
   m_Layer: 0
   m_Name: MainPlayer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4328,8 +4341,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a11da9582b67d68448eaac2775f0d61a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 20
-  JumpHeigh: 200
 --- !u!1 &1994840491
 GameObject:
   m_ObjectHideFlags: 0

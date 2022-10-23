@@ -34,7 +34,8 @@ public class MainPlayerScript : MonoBehaviour
         animator.SetBool("Turn", Turn);
         animator.SetBool("DbJump", DbJump);
         JumpUp();
-        if (gameObject.transform.y < -10f) Destroy(gameObject); 
+        Vector3 position = transform.position;
+        if (position.y < -15f) Destroy(gameObject); 
     }
 
     private void FixedUpdate()
